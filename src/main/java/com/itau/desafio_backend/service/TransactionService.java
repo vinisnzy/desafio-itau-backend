@@ -16,4 +16,12 @@ public class TransactionService {
         Transaction transaction = new Transaction(request.valor(), request.dataHora());
         transactions.add(transaction);
     }
+
+    public void clearTransactions() {
+        transactions.clear();
+    }
+
+    public Queue<Transaction> getTransactions() {
+        return transactions;
+    }
 }
